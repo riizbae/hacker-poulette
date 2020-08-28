@@ -1,0 +1,147 @@
+body {
+  background-color: #0d8187;
+  font-size: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 100vh;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #333333;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+header nav ul img {
+  width: 100px;
+}
+
+main {
+  width: 100%;
+}
+
+main article {
+  background-color: grey;
+  padding: 15px 15px;
+}
+
+main article figure {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border: 0px solid !important;
+}
+
+main article figure figcaption {
+  text-align: justify;
+}
+
+main article h2 {
+  text-align: center;
+  color: blue;
+  font-size: 1.3rem;
+}
+
+main section form {
+  padding: 0.5rem 0.5rem;
+}
+
+main section form label {
+  font-family: 'bellotabold';
+  padding-right: 1em;
+  margin-bottom: 2%;
+  width: 100%;
+  padding: 0.1em;
+  display: block;
+  clear: both;
+}
+
+main section form label input {
+  border: 1px solid #333333;
+  float: right;
+  border-radius: 5%;
+  padding: 0.1 em;
+}
+
+main section form label input [type="radio"] {
+  background: red;
+}
+
+main section form label input .sexe {
+  display: block;
+  margin: 0;
+  background-color: blue;
+}
+
+footer {
+  background: blue;
+  padding: 5px;
+}
+
+@font-face {
+  font-family: 'bellotabold';
+  src: url("font/Bellota-Bold-webfont.eot");
+  src: url("font/Bellota-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("font/Bellota-Bold-webfont.woff2") format("woff2"), url("font/Bellota-Bold-webfont.woff") format("woff"), url("font/Bellota-Bold-webfont.ttf") format("truetype"), url("font/Bellota-Bold-webfont.svg#bellotabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: #0d8187;
+  }
+  ul {
+    display: flex;
+    text-align: center;
+  }
+  ul li {
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 0px;
+    align-items: baseline;
+  }
+  ul li a {
+    display: inline-block;
+    width: 8em;
+    padding: 15px;
+    border-bottom: 0px solid red !important;
+  }
+  ul img {
+    width: 250px !important;
+  }
+  main {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main section {
+    width: 90%;
+  }
+  main section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (min-width: 600px) {
+  body {
+    background-color: #0d8187;
+  }
+}
+/*# sourceMappingURL=style.css.map */

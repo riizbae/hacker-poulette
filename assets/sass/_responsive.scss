@@ -1,0 +1,70 @@
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flexvertical{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (min-width: 992px) {
+    body {
+      background-color:#0d8187;
+    }
+
+    ul{
+         @include flexbox;
+         text-align:center;
+
+        li{
+            list-style-type: none;
+            @include flexvertical;
+            justify-content:space-around;
+            border:0px;
+            align-items:baseline;
+           
+
+            a{
+                display: inline-block;      
+                width: 8em; 
+                padding: 15px; 
+                border-bottom:0px solid red !important; 
+            }
+        }
+
+        img{
+            width:250px !important;
+            
+        }
+    }
+
+    main{
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+   
+        section{
+            width:90%;
+
+            img {
+                display:block;
+                margin-left:auto;margin-right:auto;
+            }
+            
+        }
+    }
+}
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (min-width: 600px) {
+    body {
+      background-color: #0d8187;
+    }
+  }

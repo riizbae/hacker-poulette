@@ -1,0 +1,128 @@
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flexvertical{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+body{
+    background-color: #0d8187;
+    font-size:1em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height:100vh;
+    margin:auto;
+}
+
+header{
+    width:100%;
+
+    nav{
+
+        ul{
+            list-style-type: none;
+
+            li{
+                a{
+                    display: block;      
+                    text-align:center; 
+                    border-bottom:1px solid #333333;
+                    padding: 15px;  
+                    text-decoration:none;
+                    color:#fff;
+                }
+            }
+
+            img{
+                width: 100px;
+                
+            }
+
+        }
+    }
+    
+}
+
+
+
+main{
+    width:100%;
+
+
+    article{
+        background-color:grey;
+        padding:15px 15px;
+
+        figure{
+            width:90%;
+            margin-left:auto;
+            margin-right:auto;
+            overflow:hidden;
+            border:0px solid !important;
+
+
+
+            figcaption{
+                text-align:justify;
+            }
+        }
+
+        h2{
+            text-align:center;
+            color:blue;
+            font-size:1.3rem;
+        }
+    }
+
+    section{
+        form{
+            padding:0.5rem 0.5rem;
+
+            label{
+                font-family: 'bellotabold';
+                padding-right:1em;
+                margin-bottom:2%;
+                width:100%;
+                padding:0.1em;
+                display:block;
+                clear:both;
+
+                input{
+                    border:1px solid #333333;
+                    float:right;
+                    border-radius:5%;
+                    padding:0.1 em;
+
+                    // [type="radio"]{
+                    //     background:red;
+                    // }
+
+                    .sexe{
+                        display:block;
+                        margin:0;
+                        background-color:blue;
+                    }
+
+                }
+                
+            }
+        }
+    }
+}
+
+footer{
+    background:blue;
+    padding:5px;
+}
+
+// importation police
+
+@import '_font-family.scss';
+@import '_responsive.scss';
