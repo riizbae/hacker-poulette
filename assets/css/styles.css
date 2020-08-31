@@ -1,0 +1,28 @@
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background: #0d8187 !important;
+  }
+  header nav ul li {
+    border-bottom: .1em solid #333333;
+  }
+  header nav ul li a {
+    color: #333333;
+    text-decoration: none !important;
+  }
+  header nav ul li img {
+    max-width: 50px;
+  }
+  main {
+    padding: 1rem;
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {
+    background-color: #fff;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
